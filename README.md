@@ -6,5 +6,11 @@ Spring MVC
 
 Spring Data
 
+Spring Security
+
 Thymeleaf Web Page
+
+Database Local com HSQLDB
+
+Build com Jar tipo "Fat"
  

@@ -12,6 +12,11 @@ import org.springframework.web.servlet.i18n.FixedLocaleResolver;
 public class AwVinhosApplication {
 
 	public static void main(String[] args) {
+		new Thread(new Runnable() {
+			public void run() {
+				new HsqlServer();
+			}
+		}).start();
 		SpringApplication.run(AwVinhosApplication.class, args);
 	}
 	
@@ -19,4 +24,5 @@ public class AwVinhosApplication {
 	public LocaleResolver localeResolver() {
 		return new FixedLocaleResolver(new Locale("pt", "BR"));
 	}
+	
 }
